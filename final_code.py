@@ -99,6 +99,7 @@ plt.yticks(range(8))
 plt.xlabel("Columns in weight matrix")
 plt.ylabel("Input feature")
 plt.colorbar()
+
 #here the y axis(feature axis) has the following meaning as per dataset
 #0-Pregnancies
 #1-Glucose
