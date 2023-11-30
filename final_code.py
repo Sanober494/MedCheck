@@ -32,6 +32,7 @@ plt.plot(neighbors_settings, test_accuracy, label="test accuracy")
 plt.ylabel("Accuracy")
 plt.xlabel("n_neighbors")
 plt.legend()
+
 knn = KNeighborsClassifier(n_neighbors=9)
 knn.fit(X_train, y_train)
 print('Accuracy of K-NN classifier on training set: {:.2f}'.format(knn.score(X_train, y_train)))
