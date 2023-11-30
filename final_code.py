@@ -8,6 +8,7 @@ print(diabetes.columns)
 diabetes.head()
 print("dimension of diabetes data: {}".format(diabetes.shape))
 print(diabetes.groupby('Outcome').size())
+
 #“Outcome” is the feature we are going to predict, 0 means No diabetes, 1 means diabetes. Of these 768 data points, 500 are labeled as 0 and 268 as 1
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(diabetes.loc[:, diabetes.columns != 'Outcome'], diabetes['Outcome'], stratify=diabetes['Outcome'], random_state=66)
