@@ -49,6 +49,7 @@ tree.fit(X_train, y_train)
 print("Accuracy on training set: {:.3f}".format(tree.score(X_train, y_train)))
 print("Accuracy on test set: {:.3f}".format(tree.score(X_test, y_test)))
 print("Feature importances:\n{}".format(tree.feature_importances_))
+
 def plot_feature_importances_diabetes(model):
     plt.figure(figsize=(8,6))
     n_features = 8
