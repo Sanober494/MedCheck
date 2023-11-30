@@ -92,6 +92,7 @@ mlp.fit(X_train_scaled, y_train)
 print("Accuracy on training set: {:.3f}".format(
     mlp.score(X_train_scaled, y_train)))
 print("Accuracy on test set: {:.3f}".format(mlp.score(X_test_scaled, y_test)))
+
 plt.figure(figsize=(20, 5))
 plt.imshow(mlp.coefs_[0], interpolation='none', cmap='viridis')
 plt.yticks(range(8))
