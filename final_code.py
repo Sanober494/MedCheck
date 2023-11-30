@@ -15,6 +15,7 @@ X_train, X_test, y_train, y_test = train_test_split(diabetes.loc[:, diabetes.col
 from sklearn.neighbors import KNeighborsClassifier
 training_accuracy = []
 test_accuracy = []
+
 # try n_neighbors from 1 to 10
 neighbors_settings = range(1, 11)
 for n_neighbors in neighbors_settings:
