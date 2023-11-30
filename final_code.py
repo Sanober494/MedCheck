@@ -83,6 +83,7 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.fit_transform(X_test)
 mlp = MLPClassifier(random_state=0)
 mlp.fit(X_train_scaled, y_train)
+
 print("Accuracy on training set: {:.3f}".format(
     mlp.score(X_train_scaled, y_train)))
 print("Accuracy on test set: {:.3f}".format(mlp.score(X_test_scaled, y_test)))
