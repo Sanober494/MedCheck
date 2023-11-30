@@ -76,6 +76,7 @@ mlp = MLPClassifier(random_state=42)
 mlp.fit(X_train, y_train)
 print("Accuracy on training set: {:.2f}".format(mlp.score(X_train, y_train)))
 print("Accuracy on test set: {:.2f}".format(mlp.score(X_test, y_test)))
+
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
