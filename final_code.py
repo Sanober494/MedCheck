@@ -70,6 +70,7 @@ plot_feature_importances_diabetes(tree)
 #6-DiabetesPedigreeFunction
 #7-Age
 #from graph, the Glucose feature is used the most to predict diabetes.
+
 from sklearn.neural_network import MLPClassifier
 mlp = MLPClassifier(random_state=42)
 mlp.fit(X_train, y_train)
