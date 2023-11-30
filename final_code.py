@@ -59,6 +59,7 @@ def plot_feature_importances_diabetes(model):
     plt.ylabel("Feature")
     plt.ylim(-1, n_features)
 plot_feature_importances_diabetes(tree)
+
 #here the y axis(feature axis) has the following meaning as per dataset
 #0-Pregnancies
 #1-Glucose
