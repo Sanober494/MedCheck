@@ -91,6 +91,7 @@ mlp.fit(X_train_scaled, y_train)
 print("Accuracy on training set: {:.3f}".format(
     mlp.score(X_train_scaled, y_train)))
 print("Accuracy on test set: {:.3f}".format(mlp.score(X_test_scaled, y_test)))
+
 mlp = MLPClassifier(max_iter=1000, alpha=1, random_state=0)
 mlp.fit(X_train_scaled, y_train)
 print("Accuracy on training set: {:.3f}".format(
