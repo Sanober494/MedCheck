@@ -19,6 +19,7 @@ test_accuracy = []
 
 # try n_neighbors from 1 to 10
 neighbors_settings = range(1, 11)
+
 for n_neighbors in neighbors_settings:
     # build the model
     knn = KNeighborsClassifier(n_neighbors=n_neighbors)
