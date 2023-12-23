@@ -42,6 +42,7 @@ print('Accuracy of K-NN classifier on training set: {:.2f}'.format(knn.score(X_t
 print('Accuracy of K-NN classifier on test set: {:.2f}'.format(knn.score(X_test, y_test)))
 
 from sklearn.tree import DecisionTreeClassifier
+
 tree = DecisionTreeClassifier(random_state=0)
 tree.fit(X_train, y_train)
 print("Accuracy on training set: {:.3f}".format(tree.score(X_train, y_train)))
